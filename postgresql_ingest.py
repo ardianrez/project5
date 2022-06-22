@@ -10,7 +10,7 @@ from hdfs import InsecureClient
 from datetime import datetime
 
 if __name__ == "__main__":
-    engine = create_engine('postgresql://postgres:postgres@localhost:5432/digitalskola')
+    engine = create_engine('postgresql://postgres:root@localhost:5432/digitalskola')
 
     conf_postgresql = connection.param_config("postgresql")
     conf_hadoop = connection.param_config("hadoop")["ip"]
