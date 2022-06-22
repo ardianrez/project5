@@ -28,7 +28,7 @@ start = DummyOperator(
 
 postgresql = BashOperator(
     task_id='postgresql-digitalskola',
-    bash_command='echo ardianrz',
+    bash_command='python3 /home/ardianrz/airflow/dags/postgresql_ingest.py',
     dag=dag
 )
 
